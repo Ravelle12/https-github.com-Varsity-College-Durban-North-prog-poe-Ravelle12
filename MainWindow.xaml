@@ -1,0 +1,113 @@
+﻿<Window x:Class="WpfApp1__PropertyApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1__PropertyApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="507" Width="1161">
+    <Grid Margin="0,0,0,33">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="134*"/>
+            <ColumnDefinition Width="379*"/>
+            <ColumnDefinition Width="379*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="37*"/>
+            <ColumnDefinition Width="14*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas Grid.ColumnSpan="11" HorizontalAlignment="Left" Width="1142" Margin="56,0,0,-25" RenderTransformOrigin="0.5,0.5" Grid.Column="2">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0"/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Canvas.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF1134F3" Offset="1"/>
+                </LinearGradientBrush>
+            </Canvas.Background>
+            <Label x:Name="Budget_Planning" Content="Budget Planning" Background="#FFF3F1F1" Width="150" AutomationProperties.Name="{Binding Mode=OneWay}" FontFamily="Verdana Pro Black" FontWeight="Bold" HorizontalContentAlignment="Center" RenderTransformOrigin="-0.451,0.675" Canvas.Left="494" Canvas.Top="36" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label x:Name="Text_1" Content="Complete the following information :" HorizontalContentAlignment="Left" FontWeight="Bold" Foreground="#FFF7EBEB" FontSize="14" Height="29" Canvas.Left="38" Canvas.Top="98" Width="256" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label x:Name="SubTexts1" Content="Estimated monthly tax deduction:" Foreground="#FFF5ECEC" Canvas.Left="38" Canvas.Top="132" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label x:Name="SubText2" Content="Gross general income (Before Deduction) : " IsEnabled="False" Foreground="White" FontWeight="Normal" Canvas.Left="38" Canvas.Top="163" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label x:Name="Text2" Content="Monthly Expenditure:" Foreground="#FFF5F0F0" FontWeight="Normal" FontFamily="Segoe UI Black" Height="28" FontSize="14" Canvas.Left="38" Canvas.Top="189" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label x:Name="Subtext3" Content="Water &amp; Electricity :" Foreground="#FFF1EBEB" Height="26" Canvas.Left="38" Canvas.Top="222" Width="114" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label x:Name="SubText4" Content="Travel costs (FUEL):" Foreground="#FFF9EEEE" Height="26" Canvas.Left="38" Canvas.Top="248" Width="110" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label x:Name="SubText5" Content="Cellphone and Telephone:" Canvas.Left="38" Canvas.Top="274" Foreground="#FFFBF3F3"/>
+            <Label x:Name="Subtext6" Content="Household Expenses:" Canvas.Left="38" Canvas.Top="300" Foreground="#FFFFF8F8"/>
+            <Label x:Name="Subtext7" Content="Other Expenses:" Canvas.Left="38" Canvas.Top="326" Foreground="#FFEFE8E8"/>
+            <Label x:Name="Text3" Content="Vehicle:" Canvas.Left="382" Canvas.Top="96" FontSize="16" FontFamily="Segoe UI" Foreground="#FFF5EFEF" FontWeight="Bold"/>
+            <Label x:Name="SubText9" Content="Buying of Vehicle:" Canvas.Left="382" Canvas.Top="127" Foreground="#FFECE9E9" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="Text4" Content="Complete to Purchase of Vehicle:" Canvas.Left="382" Canvas.Top="153" Foreground="#FFF9F6F6" FontSize="16"/>
+            <Label x:Name="Subtext11" Content="Model:" Canvas.Left="379" Canvas.Top="178" Foreground="#FFF9F1F1"/>
+            <Label x:Name="Subtext12" Content="Make:" Canvas.Left="379" Canvas.Top="209" Foreground="#FFF9F1F1" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.573,0.916"/>
+            <Label x:Name="Subtext13" Content="Year:" Canvas.Left="381" Canvas.Top="230" Foreground="#FFF9F1F1" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.72,-1.34"/>
+            <Label x:Name="Subtext14" Content="Purchase Price:" Canvas.Left="379" Canvas.Top="248" Foreground="#FFF9F1F1" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.248,-0.012"/>
+            <Label x:Name="Subtext15" Content="Total Deposit:" Canvas.Left="379" Canvas.Top="279" Foreground="#FFF9F1F1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label x:Name="Subtext16" Content="Interest Rate(%):" Canvas.Left="379" Canvas.Top="305" Foreground="#FFF9F1F1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="Text5" Content="Property:" Canvas.Left="761" Canvas.Top="96" FontSize="16" Foreground="#FFF3E6E6" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="Subtext1" Content="Select an Option:" Canvas.Left="761" Canvas.Top="132" Foreground="#FFF7EFEF"/>
+            <Label x:Name="Text6" Content="Complete if rent was an option:" Canvas.Left="761" Canvas.Top="153" Foreground="#FFF9F6F6" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Label x:Name="Text7" Content="Purchase of Property:" Canvas.Left="761" Canvas.Top="208" Foreground="#FFF9F6F6" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="Subtext2" Content="Rent Cost:" Canvas.Left="761" Canvas.Top="184" Foreground="#FFF7EFEF" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="Subtext18" Content="Purchase Price:" Canvas.Left="761" Canvas.Top="239" Foreground="#FFF7EFEF" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="Subtext19" Canvas.Left="761" Canvas.Top="270" Foreground="#FFF7EFEF" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="Subtext4" Content="Total Deposit:" Foreground="#FFF7EFEF" HorizontalAlignment="Left" Canvas.Left="761" Canvas.Top="261" VerticalAlignment="Top"/>
+            <Label x:Name="Subtext20" Content="Interest Rate (%):" Canvas.Left="761" Canvas.Top="287" Foreground="#FFF7EFEF" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label x:Name="Subtext21" Content="Months to Repay (Between 240~360)" Canvas.Left="761" Canvas.Top="313" Foreground="#FFF7EFEF" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="_1" Canvas.Left="230" TextWrapping="Wrap" Canvas.Top="135" Width="120"/>
+            <TextBox x:Name="_1_Copy" Canvas.Left="275" TextWrapping="Wrap" Canvas.Top="167" Width="99" HorizontalAlignment="Left" VerticalAlignment="Center" Height="17"/>
+            <TextBox x:Name="_1_Copy1" Canvas.Left="156" TextWrapping="Wrap" Canvas.Top="226" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="_1_Copy2" Canvas.Left="156" TextWrapping="Wrap" Canvas.Top="251" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="_1_Copy3" Canvas.Left="190" TextWrapping="Wrap" Canvas.Top="279" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="_1_Copy4" Canvas.Left="174" TextWrapping="Wrap" Canvas.Top="305" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="_1_Copy5" Canvas.Left="137" TextWrapping="Wrap" Canvas.Top="330" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="_1_Copy6" Canvas.Left="434" TextWrapping="Wrap" Canvas.Top="184" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="_1_Copy7" Canvas.Left="427" TextWrapping="Wrap" Canvas.Top="209" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="_1_Copy8" Canvas.Left="427" TextWrapping="Wrap" Canvas.Top="232" Width="120" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBox x:Name="_1_Copy9" Canvas.Left="473" TextWrapping="Wrap" Canvas.Top="256" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="_1_Copy10" Canvas.Left="230" TextWrapping="Wrap" Canvas.Top="135" Width="120" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox x:Name="_1_Copy11" Canvas.Left="466" TextWrapping="Wrap" Canvas.Top="282" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="_1_Copy12" Canvas.Left="476" TextWrapping="Wrap" Canvas.Top="308" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="_1_Copy13" Canvas.Left="574" TextWrapping="Wrap" Canvas.Top="334" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="_1_Copy14" Canvas.Left="829" TextWrapping="Wrap" Canvas.Top="189" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="_1_Copy15" Canvas.Left="921" TextWrapping="Wrap" Canvas.Top="212" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="_1_Copy16" Canvas.Left="850" TextWrapping="Wrap" Canvas.Top="239" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="_1_Copy17" Canvas.Left="850" TextWrapping="Wrap" Canvas.Top="266" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="_1_Copy18" Canvas.Left="861" TextWrapping="Wrap" Canvas.Top="292" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="_1_Copy19" Canvas.Left="972" TextWrapping="Wrap" Canvas.Top="318" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <ComboBox x:Name="combobox1" Canvas.Left="491" Canvas.Top="132" Width="120" Text="select a vehicle;" FontWeight="Bold" SelectionChanged="combobox1_SelectionChanged">
+                <ComboBox.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFEA1E1E" Offset="1"/>
+                    </LinearGradientBrush>
+                </ComboBox.Background>
+            </ComboBox>
+            <ComboBox x:Name="combobox2" Canvas.Left="872" Canvas.Top="134" Width="120" Text="select a option;" FontWeight="Bold" SelectionChanged="combobox1_SelectionChanged" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <ComboBox.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFEA1E1E" Offset="1"/>
+                    </LinearGradientBrush>
+                </ComboBox.Background>
+            </ComboBox>
+            <Button x:Name="button_1_" Content="Submit Results" Canvas.Left="503" Canvas.Top="382" Background="#FF212020" HorizontalAlignment="Center" BorderBrush="#FFFFFBFB" Foreground="#FFFDFAFA" Height="33" Width="141" VerticalAlignment="Top" Click="Open"/>
+        </Canvas>
+        <Label x:Name="Subtext17" Content="Estimated Insurance Premium:" Foreground="#FFF9F1F1" Grid.Column="6" Margin="156,331,0,100" RenderTransformOrigin="0.528,2.749" HorizontalAlignment="Left" Width="175"/>
+        <Button Grid.Column="7" Content="Button" HorizontalAlignment="Left" Height="0" Margin="165,545,0,0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+</Window>
